@@ -5,7 +5,57 @@ html {
     background-color: black;
 }
 
-img {
+#logo-big {
     width: 100vw;
-    height: 100vh;
+    object-fit: contain;
+    position: absolute;
+    z-index: -1;
+}
+
+#enter-message{
+    position: absolute;
+    margin-top: 75vh;
+    font-size: 3.5em;
+    color: white;
+    width: 100vw;
+    text-align: center;
+}
+
+#logo-small{
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15vw; */
+    /* margin-top: 15vh; */
+    width: 100%;
+}
+
+#home-header {
+    border-bottom: 2px solid rgb(120, 147, 172);
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+#edit-video {
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(120, 147, 172);
+}
+
+#home-link {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15vw;
+}
+
+
+@media only screen and (max-width: 800px) {
+    #logo-small{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30vw;
+        /* margin-top: 5vh; */
+    }
 }
