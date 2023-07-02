@@ -12,7 +12,7 @@ html {
     z-index: -1;
 }
 
-#enter-message{
+#enter-message {
     position: absolute;
     margin-top: 75vh;
     font-size: 3.5em;
@@ -21,7 +21,7 @@ html {
     text-align: center;
 }
 
-#logo-small{
+#logo-small {
     /* display: block;
     margin-left: auto;
     margin-right: auto;
@@ -51,11 +51,67 @@ html {
 
 
 @media only screen and (max-width: 800px) {
-    #logo-small{
+    #logo-small {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 30vw;
         /* margin-top: 5vh; */
     }
+}
+
+.photoSlides {
+    display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 5px;
+    width: 5px;
+    margin: 0 2px;
+    background-color: #718baf;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #942323;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+#footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(112, 113, 169);
+}
+
+#mailing-list {
+    padding: 2em 8em;
+}
+
+.slideshowImage {
+    width: 100%;
 }
