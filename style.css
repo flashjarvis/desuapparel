@@ -40,6 +40,9 @@ html {
     width: 100vw;
     height: 50vh;
     background-color: rgb(120, 147, 172);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #home-link {
@@ -114,4 +117,19 @@ html {
 
 .slideshowImage {
     width: 100%;
+}
+
+#browse-products {
+    width: 20%;
+    height: 20%;
+    font-size: 1.5em;
+    border: solid 3px white;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+#browse-products:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
 }
