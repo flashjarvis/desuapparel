@@ -179,7 +179,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5%;
+    padding-top: 7%;
     padding-bottom: 5%;
 }
 
@@ -190,18 +190,19 @@ header {
 }
 
 #black-polaroid {
-    margin-right: 2%;
+    margin-right: 10%;
     rotate: -10deg;
     animation: fade-in 0.6s;
     animation-fill-mode: forwards;
 }
 
 #cream-polaroid {
-    rotate: 10deg;
+    rotate: 15deg;
     animation: fade-in 0.6s;
     animation-delay: 0.6s;
     opacity: 0;
     animation-fill-mode: forwards;
+    translate: 0 -5%;
 }
 
 #black-polaroid:hover {
@@ -272,9 +273,9 @@ header {
 }
 
 #footer {
-    width: 100vw;
+    width: 100%;
     display: block;
-    overflow: auto;
+    overflow: hidden;
     background-color: #121212;
     color: white;
     padding-top: 2%;
@@ -292,6 +293,7 @@ header {
     width: 30%;
     float: left;
     margin-left: 2%;
+    text-align: center;
   }
 
   #footer-mailing-section {
@@ -312,7 +314,7 @@ header {
   }
 
   #email {
-    width: 50%;
+    width: 100%;
     height: 35px;
     display: block;
     margin-left: auto;
@@ -320,6 +322,14 @@ header {
     margin-top: 20px;
     padding-left: 10px;
     font-size: 100%;
+    box-sizing: border-box;
+  }
+
+  #mailing-form {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #email-submit {
@@ -330,8 +340,9 @@ header {
     border: solid 3px white;
     background-color: rgba(0, 0, 0, 0.53);
     color: white;
-    width: 50%;
+    width: 100%;
     height: 45px;
+    font-size: 100%;
   }
 
   #email-submit:hover {
@@ -342,7 +353,13 @@ header {
 
 
 
+
 @media only screen and (max-width: 800px) {
+
+    #footer {
+        width: 100%;
+    }
+
     #home-link {
         display: block;
         margin-left: auto;
@@ -369,6 +386,7 @@ header {
         height: 50vh;
         margin-right: 3%;
         margin-left: 3%;
+        translate: 0 0;
     }
 
     #product-cards {
@@ -376,4 +394,21 @@ header {
         height: auto;
     }
 
+    #footer-about-section {
+        width: 90%;
+        padding: 5%;
+        margin: 0;
+    }
+
+    #footer-contact-section {
+        width: 90%;
+        padding: 5%;
+        margin: 0;
+    }
+
+    #footer-mailing-section {
+        width: 90%;
+        padding: 5%;
+        margin: 0;
+    }
 }

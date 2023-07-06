@@ -105,21 +105,34 @@
                 <img src="Images/photoshoot_17.jpg" class="slideshowImage">
                 <!-- <div class="text">Caption Three</div> -->
             </div>
-            <div id="center-button">
+            <!-- <div id="center-button">
                 <button id="browse-products" onclick="window.location.href='./products.html';">BROWSE PRODUCTS</button>
-            </div>
+            </div> -->
         </div>
     </div>
     <script src="Scripts/slideshowAnimation.js"></script>
 
     <footer>
         <div id="footer">
-            <form id="mailing-list"  method="post"
-                action="https://script.google.com/macros/s/AKfycbw_-rEEzO1gxdnLdFpE6InmRDTRZMxZx90kxZ48JZBrnuzYGsTQd_KAj8CFv-VlMDZg/exec">
-                <label for="email">sign up here for updates on our drops</label>
-                <input id="email" name="Email" type="email" placeholder="Email" autocomplete="on" required>
-                <input type="submit" value="Submit">
-            </form>
+            <div id="footer-about-section">
+                <h2 class="footer-header">Desu Apparel</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare, diam quis efficitur dictum, lorem augue tincidunt sapien, et commodo purus ante eget lectus. Maecenas auctor tortor vitae nibh dignissim pharetra. Phasellus a ante nec quam ullamcorper iaculis. Sed vulputate tellus ut metus scelerisque, a bibendum justo ullamcorper. Nulla enim nisl, aliquam id diam ut, maximus elementum ipsum. Vivamus quis iaculis leo. Aliquam erat volutpat. Maecenas semper diam in mattis faucibus. In ac cursus nisi. Nulla condimentum non sem in iaculis. Sed vitae tincidunt metus, ut dignissim mauris. Mauris dui sapien, eleifend eu semper sit amet, finibus vel ex. Phasellus fringilla, nisi eu consectetur semper, sapien felis aliquet velit, ut molestie lorem nulla sed lacus. Vivamus molestie finibus sem, non convallis mi pretium ut.</p>
+            </div>
+            <div id="footer-contact-section">
+                <h2 class="footer-header" id="contact-header">Contact Us</h2>
+                <p>Email: <a class="email-link" href="mailto: examples@example.com">examples@example.com</a></p>
+            </div>
+            <div id="footer-mailing-section">
+                <h2 class="footer-header">Newsletter</h2>
+                <div id="mailing-form">
+                    <form id="mailing-list"  method="post"
+                        action="https://script.google.com/macros/s/AKfycbw_-rEEzO1gxdnLdFpE6InmRDTRZMxZx90kxZ48JZBrnuzYGsTQd_KAj8CFv-VlMDZg/exec">
+                        <label for="email">sign up here for updates on our drops:</label>
+                        <input id="email" name="Email" type="email" placeholder="Email" autocomplete="on" required>
+                        <input id="email-submit" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
