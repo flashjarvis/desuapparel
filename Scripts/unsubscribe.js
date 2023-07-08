@@ -1,5 +1,5 @@
 window.addEventListener("load", function () {
-    const form = document.getElementById('mailing-list');
+    const form = document.getElementById('unsubscribe-mailing-list');
     form.addEventListener("submit", function (e) {
         e.preventDefault();
         const data = new FormData(form);
@@ -9,7 +9,9 @@ window.addEventListener("load", function () {
             body: data,
         })
             .then(() => {
-                document.getElementById('mail-success').innerHTML = "Subscribed Successfully!";
+                // alert("Success!");
+                document.getElementById("unsubscribe-success").innerHTML = "Unsubscribe Successful!";
+                //TODO sublter success pop up
             })
     });
 });

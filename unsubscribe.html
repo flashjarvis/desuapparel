@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desu Apparel</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./DesuIcon.png" type="image/x-icon">
+</head>
+
+<body>
+    <script src="Scripts/unsubscribe.js"></script>
+    <script src="Scripts/EmailSuccess.js"></script>
+    <h2>Unsubscribe</h2>
+    <div id="unsubscribe-mailing-form">
+        <form id="unsubscribe-mailing-list" method="post"
+            action="https://script.google.com/macros/s/AKfycby1s_pSwfeHToxVCrTDSVZ7U45fUmWNC4VP6wb-sJrfnRTzCASo4zGr_8wT7zswAK-J/exec">
+            <p>Enter your email here to unsubscribe from our mailing list</p>
+            <input id="unsub-email" name="Email" type="email" placeholder="Email" autocomplete="on" required>
+            <input id="email-submit" type="submit" value="Submit" onclick="emailUnsub()">
+            <p id="unsubscribe-success">Loading...</p>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -24,9 +24,17 @@
         </nav>
     </header>
     
+
+    <script src="./PhotoChange.js"></script>
     <div id="product-cards" class="fade-in">
-        <img id="black-polaroid" src="./images/BlackPolariod.png" onclick="window.location.href='./DesuLogoBlack.html'">
-        <img id="cream-polaroid" src="./images/CreamPolariod.png" onclick="window.location.href='./DesuLogoCream.html'">
+        <div class="black-polaroid" onclick="window.location.href='./DesuLogoBlack.html'">
+            <img class="black-polaroid-image" id="black-polaroid-image" src="./images/BlackPolariod.png" onmouseover="onHoverBlack();">
+            <!-- <img class="black-polaroid-image" is="black-polaroid-hover" src="./images/BlackPolariodModel.png"> -->
+        </div>
+        <div class="cream-polaroid" onclick="window.location.href='./DesuLogoCream.html'">
+            <img class="cream-polaroid-image" src="./images/CreamPolariod.png">
+            <!-- <img class="cream-polaroid-image" id="cream-polaroid-hover" src="./images/CreamPolariodModel.png"> -->
+        </div>
     </div>
 
     <footer>
@@ -39,6 +47,8 @@
                 <h2 class="footer-header" id="contact-header">Contact Us</h2>
                 <p>Email: <a class="email-link" href="mailto: examples@example.com">examples@example.com</a></p>
             </div>
+
+            <script src="./scripts/EmailSuccess.js"></script>
             <div id="footer-mailing-section">
                 <h2 class="footer-header">Newsletter</h2>
                 <div id="mailing-form">
@@ -46,8 +56,9 @@
                         action="https://script.google.com/macros/s/AKfycbw_-rEEzO1gxdnLdFpE6InmRDTRZMxZx90kxZ48JZBrnuzYGsTQd_KAj8CFv-VlMDZg/exec">
                         <label for="email">sign up here for updates on our drops:</label>
                         <input id="email" name="Email" type="email" placeholder="Email" autocomplete="on" required>
-                        <input id="email-submit" type="submit" value="Submit">
+                        <input id="email-submit" type="submit" value="Submit" onClick="emailSubmit()">
                     </form>
+                    <p id="mail-success">Loading...</p>
                 </div>
             </div>
         </div>
