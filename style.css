@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta&family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lexend+Peta&family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
 
 :root {
     --primary-color: #121212;
@@ -24,7 +25,7 @@ html {
 }
 
 h1 {
-    font-family: 'Lexend Peta', sans-serif;
+    font-family: 'Cairo', sans-serif;
 }
 
 
@@ -192,7 +193,7 @@ header {
 
 .black-polaroid, .cream-polaroid {
     height: 100%;
-    border: solid 2px var(--primary-color);
+    border: solid 2px #121212;
     z-index: 1;
 }
 
@@ -280,7 +281,7 @@ header {
 #header_links{ /* Float left instead of right so that the scrollbar does not move it. Changes to float right when hamburger menu shows */
     /* float: right; */
     /* margin:  0 2em 0 0; */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cairo', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -321,7 +322,7 @@ header {
   }
 
   footer {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cairo', sans-serif;
     /* overflow: auto; */
 }
 
@@ -405,23 +406,23 @@ header {
   }
 
 #mail-success{
-    color: white;
+    color: var(--secondary-color);
     opacity: 0;
     margin-top: 20px;
 }
 
-h2 {
+#unsub-heading{
     text-align: center;
     margin-top: 5%;
     color: var(--secondary-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 3em;
 }
 
 #unsubscribe-mailing-list {
     width: 50%;
     color: var(--secondary-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cairo', sans-serif;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -454,12 +455,30 @@ h2 {
     height: 3vh;
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2em;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.1em;
     text-align: center;
     padding: 10px;
     margin-bottom: 2%;
+    vertical-align: middle;
+    padding-bottom: 20px;
 }
+
+#colour-mode-button {
+    color: var(--secondary-color);
+    font-size: 2em;
+    position: absolute;
+    right: 0;
+    margin-right: 3%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#colour-mode-button:hover {
+    cursor: pointer;
+}
+
 
 
 @media only screen and (max-width: 800px) {
@@ -518,5 +537,17 @@ h2 {
         width: 90%;
         padding: 5%;
         margin: 0;
+    }
+
+    #unsubscribe-mailing-list {
+        width: 80%;
+    }
+
+    #unsubscribe-mailing-list input {
+        width: 80%;
+    }
+
+    h2 {
+        margin-top: 15%;
     }
 }
